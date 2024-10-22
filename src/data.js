@@ -1,0 +1,10 @@
+export const chairs = [
+    {id:1,itemName:"Ergonomic Comfort",slug:"ergonomic_comfort",img:"chair-1.png",desc:"This chair features a contoured backrest and padded seat, providing exceptional support for long hours of sitting, perfect for home offices or study spaces.",price:"110"},
+    {id:2,itemName:"Sleek Design",slug:"sleek_design",img:"chair-2.png",desc:"With its modern aesthetic and minimalist lines, this chair complements any decor style, from contemporary to traditional, making it a versatile addition to your home.",price:"120"},
+    {id:3,itemName:"Durable Materials",slug:"durable_materials",img:"chair-3.png",desc:"Crafted from high-quality materials, this chair boasts a sturdy frame and durable upholstery, ensuring it stands the test of time while maintaining its stylish appearance.",price:"130"},
+    {id:4,itemName:"Adjustable Height",slug:"adjustable_height",img:"chair-4.png",desc:"Featuring a gas lift mechanism, this chair allows you to easily adjust the seat height for personalized comfort, accommodating a range of desk sizes and user preferences.",price:"140"},
+    {id:5,itemName:"Space Saving Solution",slug:"space-saving_solution",img:"chair-5.png",desc:"Compact and lightweight, this chair can easily fit into tight spaces, making it ideal for small apartments, dorm rooms, or as extra seating for guests.",price:"150"},
+    {id:6,itemName:"Easy Maintenance",slug:"easy_maintenance",img:"chair-6.png",desc:"The removable cushion covers are machine washable, ensuring that spills and stains are no hassle to clean, keeping your chair looking fresh and new.",price:"160"},
+    {id:7,itemName:"Versatile Use",slug:"versatile_use",img:"chair-7.png",desc:"Perfect for dining rooms, kitchens, or home offices, this chair's classic design makes it suitable for any setting, offering both style and functionality.",price:"170"},
+    {id:8,itemName:"Eco-Friendly Choice",slug:"eco-Friendly_choice",img:"chair-8.png",desc:"Made from sustainably sourced materials, this chair is not only stylish but also environmentally friendly, making it a great choice for eco-conscious consumers.",price:"180"}
+]

@@ -1,38 +1,145 @@
-.App {
+:root {
+  --main-color : #4D4CAC;
+  --sub-color : goldenrod;
+  --sec-color : #9698D6;
+  --shadow :0px 3px 5px 0px rgb(0 0 0 / 9%)
+}
+/* custom */
+button,a {cursor: pointer;}
+a {text-decoration: none !important;}
+.text-color {color: var(--main-color);}
+.sub-color {color: var(--sub-color);}
+.sec-color {color: var(--sec-color);}
+.text-gray {color: #777;}
+.text-lg {font-size: large;}
+.text-md {font-size: medium;}
+.text-sm {font-size: small;}
+.text-xs {font-size: x-small;}
+.bx-sh {box-shadow: 0 19px 38px rgba(0,0,0,.091),0 15px 12px rgba(0,0,0,.046);}
+.line-height {line-height: 1.7em;}
+.sm-title {letter-spacing: .7em;color: #777;}
+.title h3 {font-weight: bold;}
+.b25 {border-radius: 25px !important;}
+select {cursor: pointer;background-position: left .75rem center !important;}
+table tr td ,table tr th {vertical-align: middle;padding: 18px 0 !important;}
+.btn-danger {background-color: var(--sub-color) !important;border-color: var(--sub-color) !important;}
+.btn-success {background-color: #34bb7c !important;border-color: #34bb7c !important;}
+.btn-primary {background-color: var(--main-color) !important;border-color: var(--main-color) !important;}
+.btn-edit {background-color: #9698D6 !important;border-color: #9698D6 !important;color: #fff !important;}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #FF808B !important;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem #ff808b1f !important;
+}
+/* top bar */
+.top_bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_bar .cart_qty {
+  position: relative;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top_bar .cart_qty img {width: auto;max-height: 20px;margin-top: 10px;margin-right: 2px;}
+.top_bar small {
+  position: absolute;
+  display: block;
+  background-color: coral;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 12px;
+  bottom: -4px;
+  left: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fw-bold {font-weight: bold;}
+/* end custom */
+.card {position: relative;}
+.card img {
+  width: 100%;
+  height: auto;
+  margin: 10px auto 0;
+  display: block;
+  /* background-color: #fbfbfb;
+  border-radius: 4px; */
+  padding: 20px;
+  filter: drop-shadow(15px 20px 5px #ccc);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card span {
+  display: block;
+  position: absolute;
+  background-color: forestgreen;
+  color: #fff;
+  border-radius: 25px;
+  padding: 8px 20px 5px;
+  left: 35px;
+  top: 30px;
+  font-size: 11px;
 }
-
-.App-link {
-  color: #61dafb;
+.card h5 {color: goldenrod;font-weight: bold;}
+.add_to_cart {
+  background-color: #111;
+  color: #fff;
+  border-radius: 25px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  font-size: 13px;
+  width: 80%;
 }
+.card p {
+  overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp:3;
+         line-clamp:3; 
+ -webkit-box-orient: vertical;
+}
+.qty {
+  background-color: #eeeeeeb5;
+    width: 145px;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    margin: 12px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    align-items: center;
+}
+.qty button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  background-color: chocolate;
+  color: #fff;
+  font-weight: bolder;
+}
+.qty span {
+  width: 53px;
+  text-align: center;
+}
+.table tbody tr td {padding: 0;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* media */
+@media(max-width:576px) {
+  .card h5 {font-size: 13px;white-space: nowrap;}
+  .card p {font-size: 10px;}
+  .add_to_cart {
+    margin: 10px auto;
+    padding: 7px 14px;
+    font-size: 10px;
+    width: 90%;
+}
+.card span {left: 20px;top: 18px;}
 }
