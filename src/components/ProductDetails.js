@@ -3,7 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { chairs } from "../data";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../redux/store/cart";
-
+import { toast,ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const ProductDetails = () => {
   const list = useSelector((state) => state.cart.items);
   console.log(list);
@@ -27,6 +28,7 @@ const ProductDetails = () => {
     setQty(qty - 1 < 1 ? 1 : qty - 1);
   };
   const handleAddToCart = () => {
+    toast.success("Item added to cart!");
     dispatch(
       addToCart({
         productID: detail.id,
@@ -79,6 +81,8 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      {/* Notifiaction */}
+      <ToastContainer autoClose={2000} />
     </>
   );
 };
