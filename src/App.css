@@ -1,15 +1,11 @@
 :root {
-  --main-color : #4D4CAC;
   --sub-color : goldenrod;
-  --sec-color : #9698D6;
   --shadow :0px 3px 5px 0px rgb(0 0 0 / 9%)
 }
 /* custom */
 button,a {cursor: pointer;}
 a {text-decoration: none !important;}
-.text-color {color: var(--main-color);}
 .sub-color {color: var(--sub-color);}
-.sec-color {color: var(--sec-color);}
 .text-gray {color: #777;}
 .text-lg {font-size: large;}
 .text-md {font-size: medium;}
@@ -17,22 +13,26 @@ a {text-decoration: none !important;}
 .text-xs {font-size: x-small;}
 .bx-sh {box-shadow: 0 19px 38px rgba(0,0,0,.091),0 15px 12px rgba(0,0,0,.046);}
 .line-height {line-height: 1.7em;}
-.sm-title {letter-spacing: .7em;color: #777;}
-.title h3 {font-weight: bold;}
-.b25 {border-radius: 25px !important;}
-select {cursor: pointer;background-position: left .75rem center !important;}
-table tr td ,table tr th {vertical-align: middle;padding: 18px 0 !important;}
-.btn-danger {background-color: var(--sub-color) !important;border-color: var(--sub-color) !important;}
-.btn-success {background-color: #34bb7c !important;border-color: #34bb7c !important;}
-.btn-primary {background-color: var(--main-color) !important;border-color: var(--main-color) !important;}
-.btn-edit {background-color: #9698D6 !important;border-color: #9698D6 !important;color: #fff !important;}
 
-.form-control:focus {
-  color: var(--bs-body-color);
-  background-color: var(--bs-body-bg);
-  border-color: #FF808B !important;
-  outline: 0;
-  box-shadow: 0 0 0 .25rem #ff808b1f !important;
+table tr td ,table tr th {vertical-align: middle;padding: 18px 0 !important;}
+
+.proceed {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000000e8;
+  top: 0;
+  left: 0;
+  z-index: 33;
+}
+.proceed img {
+  width: auto !important;
+    max-height: 115px;
+    filter: none !important;
+    padding: 0 !important;
 }
 /* top bar */
 .top_bar .container {

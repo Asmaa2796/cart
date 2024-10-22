@@ -13,7 +13,7 @@ const Topbar = () => {
   return (
     <div className="top_bar py-3">
       <div className="container">
-        <Link to="/"><b className="text-dark">Home</b></Link>
+        <Link to="/"><img src={"/logo.png"} style={{width:"auto",maxHeight:"50px"}} alt="" /></Link>
         <Link to="/cart">
         <div className="cart_qty">
           <img src={"/cart.png"} alt="" />

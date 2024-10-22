@@ -22,7 +22,7 @@ const Products = () => {
     <div>
       <div className="container py-5">
         <h4 className="my-3 text-secondary">
-          Shopping cart <i className="fa fa-shopping-cart"></i>
+        <i className="fa fa-shopping-cart sub-color"></i> Shopping cart
         </h4>
         <div className="row">
           {chairs ? (
